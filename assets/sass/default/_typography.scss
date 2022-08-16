@@ -1,0 +1,283 @@
+/**
+ Theme Name: Project Name
+ Author: Author_name
+ Developer: Enter your name
+ Version: 1.0.0
+ */
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*--------------------------------------------------------------
+>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0. Variable
+1. Typography
+2. Spacing
+3. General Style
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1. Typography
+----------------------------------------------------------------*/
+body,
+html {
+  color: $secondary;
+  background-color: $white;
+  font-family: $primary_secondary_font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h3,
+h6 {
+  clear: both;
+  color: $primary;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-family: $primary_secondary_font;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  list-style: square outside none;
+}
+
+ol {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 15px;
+}
+
+address {
+  margin: 0 0 15px;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+
+//Typography customization 
+.cs_light_100{
+  font-weight: 100;
+}
+.cs_light_200{
+  font-weight: 200;
+}
+.cs_light_300{
+  font-weight: 300;
+}
+.cs_normal{
+  font-weight: 400;
+}
+.cs_medium{
+  font-weight: 500;
+}
+.cs_semibold{
+  font-weight: 600;
+}
+.cs_bold{
+  font-weight: 700;
+}
+.cs_extrabold{
+  font-weight: 800;
+}
+.cs_black{
+  font-weight: 900;
+}
+
+
+.cs_font_10{
+  font-size: 10px;
+}
+.cs_font_11{
+  font-size: 11px;
+}
+.cs_font_12{
+  font-size: 12px;
+}
+.cs_font_13{
+  font-size: 13px;
+}
+.cs_font_14{
+  font-size: 14px;
+}
+.cs_font_15{
+  font-size: 15px;
+}
+.cs_font_16{
+  font-size: 16px;
+}
+.cs_font_17{
+  font-size: 17px;
+}
+.cs_font_18{
+  font-size: 18px;
+}
+.cs_font_19{
+  font-size: 19px;
+}
+.cs_font_20{
+  font-size: 20px;
+}
+.cs_font_21{
+  font-size: 21px;
+}
+.cs_font_22{
+  font-size: 22px;
+}
+.cs_font_23{
+  font-size: 23px;
+}
+.cs_font_24{
+  font-size: 24px;
+}
+.cs_font_25{
+  font-size: 25px;
+}
+.cs_font_26{
+  font-size: 26px;
+}
+.cs_font_27{
+  font-size: 27px;
+}
+.cs_font_28{
+  font-size: 28px;
+}
+.cs_font_29{
+  font-size: 29px;
+}
+.cs_font_30{
+  font-size: 30px;
+}
+.cs_font_32{
+  font-size: 32px;
+}
+.cs_font_34{
+  font-size: 34px;
+}
+.cs_font_36{
+  font-size: 36px;
+}
+.cs_font_38{
+  font-size: 38px;
+}
+.cs_font_40{
+  font-size: 40px;
+}
+.cs_font_42{
+  font-size: 42px;
+}
+.cs_font_44{
+  font-size: 44px;
+}
+.cs_font_46{
+  font-size: 46px;
+}
+.cs_font_48{
+  font-size: 48px;
+}
+.cs_font_50{
+  font-size: 50px;
+}
+.cs_font_52{
+  font-size: 52px;
+}
+.cs_font_54{
+  font-size: 54px;
+}
+.cs_font_56{
+  font-size: 56px;
+}
+.cs_font_58{
+  font-size: 58px;
+}
+.cs_font_60{
+  font-size: 60px;
+}
+.cs_font_62{
+  font-size: 62px;
+}
+.cs_font_64{
+  font-size: 64px;
+}
+.cs_font_66{
+  font-size: 66px;
+}
+.cs_font_68{
+  font-size: 68px;
+}
+.cs_font_70{
+  font-size: 70px;
+}
+.cs_font_72{
+  font-size: 72px;
+}
+// .cs_font_{
+//   font-family: px;
+// }

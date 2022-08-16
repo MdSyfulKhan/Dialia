@@ -1,0 +1,25 @@
+.cs_banner {
+  position: relative;
+  transition: all 0.4s ease;
+  &.cs_style1 {
+    img{
+      width: 100%;
+      transition: all 0.7s ease;
+    }
+    .cs_banner_content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 28px;
+      .cs_banner_title {
+        margin-bottom: 5px;
+      }
+      .cs_banner_text {
+        margin-bottom: 13px;
+      }
+    }
+  }
+  &:hover img{
+    transform: scale(1.07);
+  }
+}

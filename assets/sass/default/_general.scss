@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+3. General Style
+----------------------------------------------------------------*/
+.cs_mp0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs_flex{
+  display: flex;
+}
+
+.cs_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_space_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs_zoom {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  &:hover .cs_zoom-in {
+    transform: scale(1.07);
+  }
+}
+
+.cs_vertical_middle {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .cs_vertical_middle_in {
+    width: 100%;
+  }
+}
+
+
+.cs_bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cs_sticky_footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+
+
+// theme
+.cs_radius_3px{
+  border-radius: 3px;
+}
+.cs_radius_5px{
+  border-radius: 5px;
+}
+.cs_radius_10px{
+  border-radius: 10px;
+}
+.cs_radius_50{
+  border-radius: 50%;
+}
+
+.cs_overflow_hidden{
+  overflow: hidden;
+}
+
+.cs_block{
+  display: block;
+}
+
+.cs_inline_block{
+  display: inline-block;
+}
+
+.cs_inline_flex{
+  display: inline-flex;
+}
+
+.cs_flex{
+  display: flex;
+}
+
+.cs_btn.cs_style1{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.cs_white_color,
+.cs_white_color_hover:hover{
+  color: $white;
+}
+.cs_white_bg,
+.cs_white_bg_hover:hover{
+  background-color: $white;
+}
+
+.cs_black_color,
+.cs_black_color_hover:hover{
+  color: $black;
+}
+.cs_black_bg,
+.cs_black_bg_hover:hover{
+  background-color: $black;
+}
+
+.cs_accent_color,
+.cs_accent_color_hover:hover{
+  color: $accent;
+}
+.cs_accent_bg,
+.cs_accent_bg_hover:hover{
+  background-color: $accent;
+}
+
+.cs_primary_color,
+.cs_primary_color_hover:hover{
+  color: $primary;
+}
+.cs_primary_bg,
+.cs_primary_bg_hover:hover{
+  background-color: $primary;
+}
+
+.cs_secondary_color,
+.cs_secondary_color_hover:hover{
+  color: $secondary;
+}
+.cs_secondary_bg,
+.cs_secondary_bg_hover:hover{
+  background-color: $secondary;
+}
+
+// .cs__color,
+// .cs__color_hover:hover{
+//   background-color: ;
+// }
+// .cs__bg,
+// .cs__bg_hover:hover{
+//   background-color: ;
+// }
+
