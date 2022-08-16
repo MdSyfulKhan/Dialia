@@ -1,3 +1,41 @@
-.cs_team.cs_style1{
-  
+.cs_team.cs_style1 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 117, 183, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0px;
+
+
+  .cs_team_link_group {
+    display: inline-flex;
+  }
+  .cs_team_social_link {
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    border: 1px solid rgba($accent, 0.2);
+    margin-right: 15px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .cs_team_info{
+    height: 95px;
+    position: relative;
+  }
+  .cs_team_info_top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+  }
+  .cs_team_info_bottom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
 }
