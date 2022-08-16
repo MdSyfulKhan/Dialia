@@ -31,18 +31,18 @@
     font-size: 14px;
     position: relative;
     color: #fff;
-    &:first-child::before{
+    &:first-child::before {
       position: absolute;
       content: "";
       height: 100%;
       width: 1px;
-      background-color: rgba($white,0.5);
+      background-color: rgba($white, 0.5);
       right: -13px;
     }
     &:last-child {
       margin-right: 0;
     }
-    b{
+    b {
       margin-right: 10px;
     }
     a:hover {
@@ -51,18 +51,18 @@
   }
 }
 
-.cs_top_header_links{
+.cs_top_header_links {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  li{
+  li {
     margin-right: 16px;
-    &:last-child{
+    &:last-child {
       margin: 0;
     }
-    a{
+    a {
       color: #101010;
       border-radius: 3px;
       height: 28px;
@@ -72,7 +72,7 @@
       justify-content: center;
       background-color: $white;
     }
-    a:hover{
+    a:hover {
       color: $accent;
     }
   }
@@ -108,6 +108,10 @@
   .cs_site_header.cs_style1 {
     // background-color: $main-color;
   }
+
+  .cs_main_header_right.cs_vertical_middle {
+    flex-direction: row-reverse;
+  }
 }
 
 // ======== Main Menu Style ========
@@ -129,11 +133,7 @@
 
       > li {
         margin-right: 40px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
+        
         > a {
           padding: 15px 0;
           display: inline-block;
@@ -229,17 +229,8 @@
     display: none;
   }
 
-  .cs_top_header{
+  .cs_top_header {
     background-color: #101010;
-  }
-
-  .cs_site_header.cs_style1{
-    .cs_main_header_right{
-      .cs_btn{
-        // margin-left: 20px; 
-        margin-left: 50px; 
-      }
-    }
   }
 }
 
@@ -312,7 +303,7 @@
     display: inline-block;
     width: 28px;
     height: 27px;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 15px 30px;
     cursor: pointer;
 
     span,

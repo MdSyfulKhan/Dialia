@@ -1,0 +1,29 @@
+.cs_about.cs_style1{
+  .cs_section_sub_title{
+    margin-bottom: 5px;
+  }
+  .cs_section_title{
+    margin-bottom: 22px;
+  }
+  .cs_about_text{
+    margin-bottom: 22px;
+  }
+  .cs_about_lists{
+    margin-bottom: 40px;
+    li{
+      position: relative;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      svg{
+        fill: $accent;
+        margin-right: 15px;
+      }
+    }
+  }
+  .cs_call_btn{
+    border: 1.5px solid $primary;
+    margin-left: 15px;
+  }
+}

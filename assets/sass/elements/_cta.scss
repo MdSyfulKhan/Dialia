@@ -1,0 +1,15 @@
+.cs_cta {
+  height: 715px;
+  background-color: #F2F8FB;;
+  &.cs_style1 {
+    height: initial;
+    .cs_cta_offer_text {
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+    .cs_cta_text {
+      margin-bottom: 30px;
+    }
+  }
+  
+}

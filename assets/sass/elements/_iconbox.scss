@@ -1,0 +1,48 @@
+.cs_iconbox.cs_style1{
+  background-color:  #F7EFEB;
+  transition: all 0.4s ease;
+  
+  .cs_iconbox_info{
+    padding: 30px;
+  }
+  .cs_iconbox_icon{
+    height: 52px;
+    width: 52px;
+    background-color: $accent;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    flex: none;
+    svg{
+      fill: $white;
+      stroke: $white;
+    }
+  }
+  .cs_iconbox_text{
+    margin-bottom: 13px;
+  }
+  a{
+    color: $accent;
+  }
+
+
+  &:hover{
+    background-color: $accent;
+    .cs_iconbox_icon{
+      background-color: $white;
+      svg{
+        stroke: $accent;
+        fill: $accent;
+      }
+    }
+    .cs_iconbox_title,
+    .cs_iconbox_text,
+    .cs_readmore{
+      color: $white;
+    }
+    .cs_readmore:hover{
+      margin-left: 3px;
+      color: rgba($white, 0.7);
+    }
+  }
+}
