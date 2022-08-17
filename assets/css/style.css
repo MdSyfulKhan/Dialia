@@ -1702,6 +1702,11 @@ a {
   margin: 0;
 }
 
+.cs_blog.cs_style1 .cs_readmore {
+  margin-top: 7px;
+  display: block;
+}
+
 .cs_instagram.cs_style1 {
   width: 100%;
   height: 265px;
