@@ -1,0 +1,24 @@
+.cs_pricing.cs_style1 {
+  border-radius: 10px;
+  .cs_price_info {
+    padding: 50px 30px;
+  }
+  .cs_price_title {
+    margin-bottom: 18px;
+  }
+  .cs_price {
+    margin-bottom: 15px;
+  }
+  .cs_price_lists {
+    margin-bottom: 30px;
+    > li {
+      margin-bottom: 10px;
+    }
+  }
+  .cs_btn.cs_style1 {
+    border: 1px solid $accent;
+  }
+  .cs_line_through{
+    opacity: 0.5;
+  }
+}

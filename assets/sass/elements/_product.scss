@@ -1,0 +1,46 @@
+.cs_product.cs_style1 {
+  .cs_product_thumbnail {
+    height: 320px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background: rgba(0, 117, 183, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: rgba($accent, 0.2);
+      z-index: 1;
+    }
+    img {
+      position: relative;
+      z-index: 11;
+    }
+    .cs_product_label{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 62px;
+    }
+  }
+  .cs_product_info {
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .cs_product_title {
+    margin-bottom: 7px;
+    display: block;
+  }
+  .cs_product_price span {
+    margin-right: 15px;
+  }
+}
