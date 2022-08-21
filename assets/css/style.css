@@ -491,7 +491,9 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-.cs_zoom:hover .cs_zoom-in {
+.cs_zoom:hover .cs_zoom_in {
+  -webkit-transition: inherit;
+  transition: inherit;
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
@@ -1590,6 +1592,95 @@ a {
   margin: 0;
 }
 
+.cs_contact.cs_style1 .cs_section_title {
+  margin-bottom: 5px;
+}
+
+.cs_contact.cs_style1 .cs_section_sub_title {
+  margin-bottom: 15px;
+}
+
+.cs_contact.cs_style1 .cs_appointment_text {
+  margin-bottom: 25px;
+}
+
+.cs_contact.cs_style1 .cs_appointment_info {
+  padding: 45px;
+}
+
+.cs_contact.cs_style1 .cs_appointment_in {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 117, 183, 0.3);
+}
+
+.cs_contact.cs_style1 .cs_appointment_in:last-child {
+  border: none;
+}
+
+.cs_contact.cs_style1 .cs_appointment_location_icon {
+  margin-right: 20px;
+}
+
+.cs_contact.cs_style1 .cs_input_filed.cs_style1 {
+  border: 1px solid rgba(0, 117, 183, 0.3);
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.cs_contact.cs_style1 .cs_input_filed.cs_style1 input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+  border-radius: inherit;
+  color: #777777;
+}
+
+.cs_contact.cs_style1 select {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  padding-left: 12px;
+  color: #777777;
+}
+
+.cs_contact.cs_style1 button {
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid #0075B7;
+}
+
+.cs_contact.cs_style1 button:hover {
+  background-color: transparent;
+  border: 1px solid #0075B7;
+  color: #0075B7;
+}
+
+.cs_contact.cs_style1 form {
+  max-width: 660px;
+  padding: 50px 27px;
+  border-radius: 10px;
+}
+
+.cs_full_width_right {
+  margin-left: 70px;
+}
+
 .cs_product.cs_style1 .cs_product_thumbnail {
   height: 320px;
   width: 100%;
@@ -1615,6 +1706,8 @@ a {
 }
 
 .cs_product.cs_style1 .cs_product_thumbnail img {
+  -webkit-transition: inherit;
+  transition: inherit;
   position: relative;
   z-index: 11;
 }
@@ -1674,6 +1767,10 @@ a {
   opacity: 0.5;
 }
 
+.cs_mb_30 {
+  margin-bottom: 30px;
+}
+
 .cs_blog.cs_style1 .cs_blog_thumbnail {
   display: block;
   margin-bottom: 23px;
@@ -1683,6 +1780,8 @@ a {
 
 .cs_blog.cs_style1 .cs_blog_thumbnail img {
   width: 100%;
+  -webkit-transition: inherit;
+  transition: inherit;
 }
 
 .cs_blog.cs_style1 .cs_blog_thumbnail.cs_mp0 {
@@ -1711,9 +1810,14 @@ a {
   width: 100%;
   height: 265px;
   position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .cs_instagram.cs_style1 > img {
+  -webkit-transition: inherit;
+  transition: inherit;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1744,7 +1848,7 @@ a {
 
 .cs_instagram.cs_style1 > a::after {
   font-family: "Font Awesome 5 Free";
-  content: "\f16d";
+  content: "\f062";
   background-color: rgba(68, 68, 68, 0.8);
   position: absolute;
   top: 50%;
@@ -1774,6 +1878,164 @@ a {
       grid-template-rows: 1;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_widget_title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.cs_footer_widget.cs_style1 address {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
+.cs_footer_widget.cs_style1 .cs_address_info {
+  margin-bottom: 10px;
+}
+
+.cs_footer_widget.cs_style1 .cs_address_info:last-child {
+  margin: 0;
+}
+
+.cs_footer_widget.cs_style1 .cs_address_head {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 80px;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_social_links li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_social_links li:last-child {
+  margin: 0;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_social_links li a {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_social_links li a:hover {
+  color: #0075B7;
+}
+
+.cs_footer_widget.cs_style1 .cs_post_lists {
+  margin-bottom: 25px;
+}
+
+.cs_footer_widget.cs_style1 .cs_post_lists:last-child {
+  margin: 0;
+}
+
+.cs_footer_widget.cs_style1 .cs_thumbnail {
+  height: 50px;
+  width: 75px;
+  margin-right: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.cs_footer_widget.cs_style1 .cs_thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+.cs_footer_widget.cs_style1 .cs_post_title {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cs_footer_widget.cs_style1 .cs_post_title > a {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_widget_nav li {
+  margin-bottom: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_widget_nav li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_widget_nav li a:hover {
+  color: #0075B7;
+  padding-left: 5px;
+}
+
+.cs_footer_widget.cs_style1 .cs_footer_widget_text {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cs_footer_widget.cs_style1 .cs_newsletter {
+  position: relative;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+}
+
+.cs_footer_widget.cs_style1 .cs_newsletter > input {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  padding-left: 15px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.cs_footer_widget.cs_style1 .cs_newsletter button {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  border-left: 1px solid #fff;
+}
+
+.cs_copyright {
+  position: relative;
+}
+
+.cs_copyright .cs_back_to_top {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.cs_copyright .cs_back_to_top:hover {
+  opacity: 1;
 }
 
 .cs_imgbox.cs_style1 {

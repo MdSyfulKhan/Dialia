@@ -25,7 +25,8 @@
 .cs_zoom {
   position: relative;
   transition: all 0.4s ease-in-out;
-  &:hover .cs_zoom-in {
+  &:hover .cs_zoom_in {
+    transition: inherit;
     transform: scale(1.07);
   }
 }
@@ -137,6 +138,7 @@
   padding-left: 26px;
   padding-right: 26px;
 }
+
 
 .cs_white_color,
 .cs_white_color_hover:hover{

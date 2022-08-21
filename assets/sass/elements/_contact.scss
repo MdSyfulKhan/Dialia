@@ -1,0 +1,74 @@
+.cs_contact.cs_style1 {
+  .cs_section_title {
+    margin-bottom: 5px;
+  }
+  .cs_section_sub_title {
+    margin-bottom: 15px;
+  }
+  .cs_appointment_text {
+    margin-bottom: 25px;
+  }
+
+  .cs_appointment_info {
+    padding: 45px;
+  }
+  .cs_appointment_in {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba($accent, 0.3);
+    &:last-child {
+      border: none;
+    }
+  }
+  .cs_appointment_location_icon {
+    margin-right: 20px;
+  }
+
+  .cs_input_filed.cs_style1 {
+    border: 1px solid rgba($accent, 0.3);
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      border-radius: inherit;
+      color: $secondary;
+    }
+  }
+  select {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    position: relative;
+    padding-left: 12px;
+    color: $secondary;
+    ::before {
+    }
+  }
+  button {
+    border: none;
+    outline: none;
+    transition: all 0.4s ease;
+    border: 1px solid $accent;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $accent;
+      color: $accent;
+    }
+  }
+  form{
+    max-width: 660px;
+    padding: 50px 27px;
+    border-radius: 10px;
+  }
+}
+.cs_full_width_right{
+  margin-left: 70px;
+}

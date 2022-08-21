@@ -1,0 +1,135 @@
+.cs_footer_widget.cs_style1 {
+  .cs_footer_widget_title {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+  address{
+    color: rgba($white, 0.8);
+    margin-bottom: 30px;
+  }
+  .cs_address_info{
+    margin-bottom: 10px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .cs_address_head{
+    flex: none;
+    width: 80px;
+  }
+
+  .cs_footer_social_links li {
+    display: inline-flex;
+    background-color: rgba($white, 0.15);
+    border-radius: 50%;
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+    a {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      display: block;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  // col-2
+  .cs_post_lists {
+    margin-bottom: 25px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .cs_thumbnail {
+    height: 50px;
+    width: 75px;
+    margin-right: 25px;
+    flex: none;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .cs_post_title{
+    margin-bottom: 5px;
+    color: rgba($white, 0.8);
+    > a{
+      display: block;
+      max-width: 200px;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: capitalize;
+    }
+  }
+
+  // col-3
+  .cs_footer_widget_nav li {
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+    a{
+      color: rgba($white, 0.8);
+      &:hover {
+        color: $accent;
+        padding-left: 5px;
+      } 
+    }
+  }
+
+  // col-4
+  .cs_footer_widget_text{
+    margin-bottom: 25px;
+    color: rgba($white, 0.8);
+  }
+  .cs_newsletter {
+    position: relative;
+    border: 1px solid $white;
+    margin-bottom: 30px;
+    > input {
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      padding-left: 15px;
+      color: $white;
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+    }
+    button {
+      transition: all 0.4s ease;
+      width: 50px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      outline: 0;
+      border-left: 1px solid $white;
+    }
+  }
+}
+.cs_copyright{
+  position: relative;
+  .cs_back_to_top{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+
