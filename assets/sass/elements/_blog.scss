@@ -2,26 +2,22 @@
 .cs_mb_30{
   margin-bottom: 30px;
 }
-
-
 .cs_blog.cs_style1{
   .cs_blog_thumbnail{
     display: block;
-    margin-bottom: 23px;
     border-radius: 7px;
     overflow: hidden;
     img{
       width: 100%;
-      transition: inherit;
+      transition: all 0.5s ease;
     }
   }
-  .cs_blog_thumbnail.cs_mp0{
-    margin: 0;
+  .cs_blog_info{
+    padding: 20px 0;
   }
 
   .cs_blog_meta{
     margin-bottom: 10px;
-
     span{
       font-size: 14px;
       margin-right: 28px;

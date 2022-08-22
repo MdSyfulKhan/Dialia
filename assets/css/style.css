@@ -449,6 +449,135 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .cs_font_sm_10 {
+    font-size: 10px;
+  }
+  .cs_font_sm_11 {
+    font-size: 11px;
+  }
+  .cs_font_sm_12 {
+    font-size: 12px;
+  }
+  .cs_font_sm_13 {
+    font-size: 13px;
+  }
+  .cs_font_sm_14 {
+    font-size: 14px;
+  }
+  .cs_font_sm_15 {
+    font-size: 15px;
+  }
+  .cs_font_sm_16 {
+    font-size: 16px;
+  }
+  .cs_font_sm_17 {
+    font-size: 17px;
+  }
+  .cs_font_sm_18 {
+    font-size: 18px;
+  }
+  .cs_font_sm_19 {
+    font-size: 19px;
+  }
+  .cs_font_sm_20 {
+    font-size: 20px;
+  }
+  .cs_font_sm_21 {
+    font-size: 21px;
+  }
+  .cs_font_sm_22 {
+    font-size: 22px;
+  }
+  .cs_font_sm_23 {
+    font-size: 23px;
+  }
+  .cs_font_sm_24 {
+    font-size: 24px;
+  }
+  .cs_font_sm_25 {
+    font-size: 25px;
+  }
+  .cs_font_sm_26 {
+    font-size: 26px;
+  }
+  .cs_font_sm_27 {
+    font-size: 27px;
+  }
+  .cs_font_sm_28 {
+    font-size: 28px;
+  }
+  .cs_font_sm_29 {
+    font-size: 29px;
+  }
+  .cs_font_sm_30 {
+    font-size: 30px;
+  }
+  .cs_font_sm_32 {
+    font-size: 32px;
+  }
+  .cs_font_sm_34 {
+    font-size: 34px;
+  }
+  .cs_font_sm_36 {
+    font-size: 36px;
+  }
+  .cs_font_sm_38 {
+    font-size: 38px;
+  }
+  .cs_font_sm_40 {
+    font-size: 40px;
+  }
+  .cs_font_sm_42 {
+    font-size: 42px;
+  }
+  .cs_font_sm_44 {
+    font-size: 44px;
+  }
+  .cs_font_sm_46 {
+    font-size: 46px;
+  }
+  .cs_font_sm_48 {
+    font-size: 48px;
+  }
+  .cs_font_sm_50 {
+    font-size: 50px;
+  }
+  .cs_font_sm_52 {
+    font-size: 52px;
+  }
+  .cs_font_sm_54 {
+    font-size: 54px;
+  }
+  .cs_font_sm_56 {
+    font-size: 56px;
+  }
+  .cs_font_sm_58 {
+    font-size: 58px;
+  }
+  .cs_font_sm_60 {
+    font-size: 60px;
+  }
+  .cs_font_sm_62 {
+    font-size: 62px;
+  }
+  .cs_font_sm_64 {
+    font-size: 64px;
+  }
+  .cs_font_sm_66 {
+    font-size: 66px;
+  }
+  .cs_font_sm_68 {
+    font-size: 68px;
+  }
+  .cs_font_sm_70 {
+    font-size: 70px;
+  }
+  .cs_font_sm_72 {
+    font-size: 72px;
+  }
+}
+
 /*--------------------------------------------------------------
 3. General Style
 ----------------------------------------------------------------*/
@@ -672,6 +801,16 @@ a {
 .cs_secondary_bg,
 .cs_secondary_bg_hover:hover {
   background-color: #777777;
+}
+
+.cs_tertiary_color,
+.cs_tertiary_color_hover:hover {
+  color: #FAF8F6;
+}
+
+.cs_tertiary_bg,
+.cs_tertiary_bg_hover:hover {
+  background-color: #FAF8F6;
 }
 
 /*--------------------------------------------------------------
@@ -1070,6 +1209,23 @@ a {
   height: 90px;
 }
 
+.cs_site_header.cs_style1 .cs_site_branding {
+  height: 55px;
+  width: 70px;
+  display: block;
+}
+
+.cs_site_header.cs_style1 .cs_site_branding svg {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .cs_site_header .cs_btn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .cs_main_header .container {
     max-width: 100%;
@@ -1328,16 +1484,31 @@ a {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 991px) {
+  .cs_hero.cs_style1 {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cs_hero.cs_style1 {
+    height: 600px;
+  }
+}
+
 .cs_banner {
   position: relative;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .cs_banner.cs_style1 img {
   width: 100%;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.cs_banner.cs_style1 .cs_zoom:hover .cs_zoom_in {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .cs_banner.cs_style1 .cs_banner_content {
@@ -1354,11 +1525,6 @@ a {
 
 .cs_banner.cs_style1 .cs_banner_content .cs_banner_text {
   margin-bottom: 13px;
-}
-
-.cs_banner:hover img {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
 }
 
 .cs_about.cs_style1 .cs_section_sub_title {
@@ -1497,6 +1663,21 @@ a {
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .cs_testmonial.cs_style1 .cs_testmonial_in.cs_vertical_middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cs_testmonial.cs_style1 .cs_testmonial_left {
+    margin: 0;
+  }
+  .cs_testmonial.cs_style1 .cs_testmonial_right {
+    margin-top: 30px;
+  }
 }
 
 .cs_cta {
@@ -1686,9 +1867,9 @@ a {
   width: 100%;
   padding: 10px;
   position: relative;
-  background: rgba(0, 117, 183, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid rgba(0, 117, 183, 0.2);
 }
 
 .cs_product.cs_style1 .cs_product_thumbnail::before {
@@ -1702,14 +1883,25 @@ a {
   width: 200px;
   border-radius: 50%;
   background-color: rgba(0, 117, 183, 0.2);
-  z-index: 1;
+}
+
+.cs_product.cs_style1 .cs_product_thumbnail::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
 }
 
 .cs_product.cs_style1 .cs_product_thumbnail img {
   -webkit-transition: inherit;
   transition: inherit;
   position: relative;
-  z-index: 11;
+  z-index: 111;
 }
 
 .cs_product.cs_style1 .cs_product_thumbnail .cs_product_label {
@@ -1718,6 +1910,10 @@ a {
   right: 0;
   height: 40px;
   width: 62px;
+}
+
+.cs_product.cs_style1:hover .cs_product_thumbnail::after {
+  background-color: rgba(0, 117, 183, 0.2);
 }
 
 .cs_product.cs_style1 .cs_product_info {
@@ -1773,19 +1969,18 @@ a {
 
 .cs_blog.cs_style1 .cs_blog_thumbnail {
   display: block;
-  margin-bottom: 23px;
   border-radius: 7px;
   overflow: hidden;
 }
 
 .cs_blog.cs_style1 .cs_blog_thumbnail img {
   width: 100%;
-  -webkit-transition: inherit;
-  transition: inherit;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.cs_blog.cs_style1 .cs_blog_thumbnail.cs_mp0 {
-  margin: 0;
+.cs_blog.cs_style1 .cs_blog_info {
+  padding: 20px 0;
 }
 
 .cs_blog.cs_style1 .cs_blog_meta {
@@ -1878,6 +2073,15 @@ a {
       grid-template-rows: 1;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+}
+
+@media only screen and (max-width: 1200px) {
+  .cs_grid_layout_5 {
+    -ms-grid-rows: 1;
+        grid-template-rows: 1;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .cs_footer_widget.cs_style1 .cs_footer_widget_title {

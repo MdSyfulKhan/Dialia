@@ -185,6 +185,15 @@
   background-color: $secondary;
 }
 
+.cs_tertiary_color,
+.cs_tertiary_color_hover:hover{
+  color: $tertiary;
+}
+.cs_tertiary_bg,
+.cs_tertiary_bg_hover:hover{
+  background-color: $tertiary;
+}
+
 // .cs__color,
 // .cs__color_hover:hover{
 //   background-color: ;

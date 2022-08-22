@@ -2,7 +2,7 @@
 4. Header
 ----------------------------------------------------------------*/
 .cs_top_header {
-  // background-color: $base-color1;
+  // background-color: ;
   overflow: hidden;
   .cs_top_header_in {
     height: 50px;
@@ -79,7 +79,6 @@
 }
 
 .cs_site_header.cs_style1 {
-  // background-color: rgba($main-color, 0.9);
   box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
   transition: all 0.4s ease;
 
@@ -92,7 +91,21 @@
   }
 
   &.cs_sticky_active {
-    // background-color: $main-color;
+    // background-color: ;
+  }
+  .cs_site_branding{
+    height: 55px;
+    width: 70px;
+    display: block;
+    svg{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 400px){
+  .cs_site_header .cs_btn{
+    display: none;
   }
 }
 
@@ -105,13 +118,11 @@
     display: none;
   }
 
-  .cs_site_header.cs_style1 {
-    // background-color: $main-color;
-  }
-
   .cs_main_header_right.cs_vertical_middle {
     flex-direction: row-reverse;
   }
+
+
 }
 
 // ======== Main Menu Style ========

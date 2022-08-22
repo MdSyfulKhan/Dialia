@@ -56,3 +56,9 @@
   grid-template-rows: 1;
   grid-template-columns: repeat(6, 1fr);
 }
+@media only screen and (max-width: 1200px) {
+  .cs_grid_layout_5 {
+    grid-template-rows: 1;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

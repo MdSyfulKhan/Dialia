@@ -4,9 +4,9 @@
     width: 100%;
     padding: 10px;
     position: relative;
-    background: rgba(0, 117, 183, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    border:1px solid rgba($accent, 0.2);
     &::before {
       position: absolute;
       content: "";
@@ -17,12 +17,21 @@
       width: 200px;
       border-radius: 50%;
       background-color: rgba($accent, 0.2);
-      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      transition: inherit;
     }
     img {
       transition: inherit;
       position: relative;
-      z-index: 11;
+      z-index: 111;
     }
     .cs_product_label{
       position: absolute;
@@ -31,6 +40,9 @@
       height: 40px;
       width: 62px;
     }
+  }
+  &:hover .cs_product_thumbnail::after{
+    background-color: rgba($accent, 0.2);
   }
   .cs_product_info {
     padding: 20px;
