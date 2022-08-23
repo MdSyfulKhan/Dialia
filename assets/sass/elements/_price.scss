@@ -1,5 +1,9 @@
 .cs_pricing.cs_style1 {
   border-radius: 10px;
+  transition: all 0.4s ease;
+  &:hover{
+    transform: translateY(-5px);
+  }
   .cs_price_info {
     padding: 50px 30px;
   }

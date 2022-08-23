@@ -43,7 +43,14 @@
 .cs_line_through{
   text-decoration: line-through;
 }
-
+.cs_bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cs_bg_cover{
+  background-size: cover;
+}
 .cs_no_repeat {
   background-repeat: no-repeat;
 }
@@ -56,6 +63,7 @@
 .cs_bg_center_left{
   background-position: center left;
 }
+
 
 .cs_sticky_footer {
   width: 100%;
@@ -75,16 +83,13 @@
 .cs_full_width_left{
   width: 50vw;
   height: 100%;
+  margin-left: calc(-50vw + 102.7%);
 }
 
 .cs_full_width_right{
+  height: 100%;
   width: 50vw;
 }
-
-.cs_full_width_left.cs_ml_minus_190{
-  margin-left: -190px;
-}
-
 
 .cs_text_center{
   text-align: center;
@@ -95,7 +100,7 @@
 
 // theme 
 .cs_hidden{
-  display: none;
+  display: none !important;
 }
 
 .cs_radius_3px{
@@ -202,4 +207,32 @@
 // .cs__bg_hover:hover{
 //   background-color: ;
 // }
+
+
+@media screen and (max-width: 991px) {
+  .cs_col_md_reverse{
+    flex-direction: column-reverse;
+  }
+  .cs_full_width_left{
+    margin: auto;
+    width: 90%;
+  }
+  .cs_full_width_right{
+    margin: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs_col_sm_reverse{
+    flex-direction: column-reverse;
+  }
+  .cs_bg_sm_center{
+    background-position: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .cs_col_xm_reverse{
+    flex-direction: column-reverse;
+  }
+}
 

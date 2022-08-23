@@ -1,93 +1,65 @@
-(function($) {
-
+(function ($) {
   "use strict";
-
-    /*
-    |--------------------------------------------------------------------------
-    | Template Name: Nischinto
-    | Author: Laralink
-    | Developer: Tamjid Bin Murtoza;
-    | Version: 1.0.0
-    |--------------------------------------------------------------------------
-    |--------------------------------------------------------------------------
-    | TABLE OF CONTENTS:
-    |--------------------------------------------------------------------------
-    |
+  /*
     | 1. Placeholder
     | 2. Dynamic Background
     | 3. Mobile Menu
-    | 4. Sticky Header
-    | 5. One Page Navigation
-    | 6. Isotop Initialize
-    | 7. Back To Top
-    | 8. Footer Sticky
-    | 9. Slick Slider
-    | 10. Progress Bar
-    | 11. Pricing Table
-    | 12. Ajax Contact Form And Appointment
-    | 13. Mailchimp start
-    | 14. Modal Video
-    | 15. Light Gallery
-    | 16. Tamjid Counter
-    | 17. Ripple
-    | 18. Tabs
-    | 19. Accordian
-    | 20. Before After Slider
-    |
+
+
     */
 
   /*--------------------------------------------------------------
     Scripts initialization
   --------------------------------------------------------------*/
-  $.exists = function(selector) {
-    return $(selector).length > 0;
-  };
+  // $.exists = function(selector) {
+  //   return $(selector).length > 0;
+  // };
 
-  $(window).on("load", function() {
-    $(window).trigger("scroll");
-    $(window).trigger("resize");
-    // preloaderSetup();
-    // isotopInit();
-  });
+  // $(window).on("load", function() {
+  //   $(window).trigger("scroll");
+  //   $(window).trigger("resize");
+  //   preloaderSetup();
+  //   isotopInit();
+  // });
 
-  $(document).on("ready", function() {
-    $(window).trigger("resize");
-    // dynamicBackground();
-    // isotopInit();
-    // backToTop();
-    // stickyFooter();
-    // formValidation();
-    // appointmentForm();
-    // slickInit();
-    // progressBarInit();
-    // pricingTableInit();
-    // stickyHeader();
-    // onePageNavigation();
-    mobileMenu();
-    // mailchimpInit();
-    // modalVideo();
-    // lightGallery();
-    // counterInit();
-    // rippleInit();
-    // new WOW().init();
-    // tabs();
-    // accordianSetup();
-    // beforeAfterSlider();
-    // if ($.exists('.player')) {
-    //   $('.player').YTPlayer();
-    // }
-    // if ($.exists('.st-isotop')) {
-    //   $('#udate').datepicker();
-    // }
-    // if ($.exists('.st_select1')) {
-    //   $(".st_select1").select2({
-    //     placeholder: function(){
-    //       $(this).data('placeholder');
-    //     },
-    //   });
-    // }
+  // $(document).on("ready", function() {
+  //   $(window).trigger("resize");
+  dynamicBackground();
+  mobileMenu();
+  slickInit();
+  //   isotopInit();
+  //   backToTop();
+  //   stickyFooter();
+  //   formValidation();
+  //   appointmentForm();
 
-  });
+  //   progressBarInit();
+  //   pricingTableInit();
+  //   stickyHeader();
+  //   onePageNavigation();
+  //   mailchimpInit();
+  //   modalVideo();
+  //   lightGallery();
+  //   counterInit();
+  //   rippleInit();
+  //   new WOW().init();
+  //   tabs();
+  //   accordianSetup();
+  //   beforeAfterSlider();
+  //   if ($.exists('.player')) {
+  //     $('.player').YTPlayer();
+  //   }
+  //   if ($.exists('.cs_isotop')) {
+  //     $('#udate').datepicker();
+  //   }
+  //   if ($.exists('.st_select1')) {
+  //     $(".st_select1").select2({
+  //       placeholder: function(){
+  //         $(this).data('placeholder');
+  //       },
+  //     });
+  //   }
+  // });
 
   // $(window).on("resize", function() {
   //   isotopInit();
@@ -103,8 +75,8 @@
     1. Placeholder
   --------------------------------------------------------------*/
   // function preloaderSetup() {
-  //   $(".st-perloader").fadeOut();
-  //   $("st-perloader-in").delay(150).fadeOut("slow");
+  //   $(".cs_perloader").fadeOut();
+  //   $("cs_perloader-in").delay(150).fadeOut("slow");
   // }
 
   /*--------------------------------------------------------------
@@ -112,34 +84,33 @@
   --------------------------------------------------------------*/
   function dynamicBackground() {
     // Background images
-    $('.st-dynamic-bg').each(function() {
-      var src = $(this).attr('data-src');
+    $(".cs_dynamic_bg").each(function () {
+      var src = $(this).attr("data-src");
       $(this).css({
-        'background-image': 'url(' + src + ')'
+        "background-image": "url(" + src + ")",
       });
     });
   }
-  dynamicBackground();
 
   /*--------------------------------------------------------------
     3. Mobile Menu
   --------------------------------------------------------------*/
   function mobileMenu() {
-    $('.st-nav').append('<span class="st-munu-toggle"><span></span></span>');
-    $('.menu-item-has-children').append('<span class="st-munu-dropdown-toggle"></span>');
-    $('.st-munu-toggle').on('click', function() {
-      $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();;
+    $(".cs_nav").append('<span class="cs_menu_toggle"><span></span></span>');
+    $(".menu-item-has-children").append(
+      '<span class="cs_menu_dropdown_toggle"></span>'
+    );
+    $(".cs_menu_toggle").on("click", function () {
+      $(this)
+        .toggleClass("cs_toggle_active")
+        .siblings(".cs_nav_list")
+        .slideToggle();
     });
-    $('.st-munu-dropdown-toggle').on('click', function() {
-      $(this).toggleClass('active').siblings('ul').slideToggle();
+    $(".cs_menu_dropdown_toggle").on("click", function () {
+      $(this).toggleClass("active").siblings("ul").slideToggle();
     });
-    // $('.st-smooth-move').on('click', function() {
-    //   $('.st-onepage-nav').slideUp();
-    //   $('.st-munu-toggle').removeClass('st-toggle-active');
-    // })
-    // Sidebar Header
-    $('.st-site-header.st-style2').parents('body').addClass('st-get-sidebar');
   }
+
 
   /*--------------------------------------------------------------
     4. Sticky Header
@@ -147,9 +118,9 @@
   // function stickyHeader() {
   //   var scroll = $(window).scrollTop();
   //   if (scroll >= 10) {
-  //     $('.st-sticky-header').addClass('st-sticky-active');
+  //     $('.cs_sticky-header').addClass('cs_sticky-active');
   //   } else {
-  //     $('.st-sticky-header').removeClass('st-sticky-active');
+  //     $('.cs_sticky-header').removeClass('cs_sticky-active');
   //   }
   // }
 
@@ -158,7 +129,7 @@
   --------------------------------------------------------------*/
   // function onePageNavigation() {
   //   // Click To Go Top
-  //   $('.st-smooth-move').on('click', function() {
+  //   $('.cs_smooth-move').on('click', function() {
   //     var thisAttr = $(this).attr('href');
   //     if ($(thisAttr).length) {
   //       var scrollPoint = $(thisAttr).offset().top - 10;
@@ -173,7 +144,7 @@
   //   var topLimit = 300,
   //   ultimateOffset = 200;
 
-  //   $('.st-onepage-nav').each(function() {
+  //   $('.cs_onepage-nav').each(function() {
   //     var $this = $(this),
   //     $parent = $this.parent(),
   //     current = null,
@@ -223,25 +194,25 @@
     6. Isotop Initialize
   --------------------------------------------------------------*/
   // function isotopInit() {
-  //   if ($.exists('.st-isotop')) {
-  //     $('.st-isotop').isotope({
-  //       itemSelector: '.st-isotop-item',
+  //   if ($.exists('.cs_isotop')) {
+  //     $('.cs_isotop').isotope({
+  //       itemSelector: '.cs_isotop-item',
   //       transitionDuration: '0.60s',
   //       percentPosition: true,
   //       masonry: {
-  //         columnWidth: '.st-grid-sizer'
+  //         columnWidth: '.cs_grid-sizer'
   //       }
   //     });
   //     /* Active Class of Portfolio*/
-  //     $('.st-isotop-filter ul li').on('click', function(event) {
+  //     $('.cs_isotop-filter ul li').on('click', function(event) {
   //       $(this).siblings('.active').removeClass('active');
   //       $(this).addClass('active');
   //       event.preventDefault();
   //     });
   //     /*=== Portfolio filtering ===*/
-  //     $('.st-isotop-filter ul').on('click', 'a', function() {
+  //     $('.cs_isotop-filter ul').on('click', 'a', function() {
   //       var filterElement = $(this).attr('data-filter');
-  //       $(this).parents('.st-isotop-filter').next().isotope({
+  //       $(this).parents('.cs_isotop-filter').next().isotope({
   //         filter: filterElement
   //       });
   //     });
@@ -252,7 +223,7 @@
     7. Back To Top
   --------------------------------------------------------------*/
   // function backToTop() {
-  //   $('#st-backtotop').on('click', function(e) {
+  //   $('#cs_backtotop').on('click', function(e) {
   //     e.preventDefault();
   //     $('html,body').animate({
   //       scrollTop: 0
@@ -265,24 +236,24 @@
   --------------------------------------------------------------*/
   // function stickyFooter() {
   //   // Sticky Footer
-  //   var footerHeight = ($('.st-sticky-footer').height());
+  //   var footerHeight = ($('.cs_sticky-footer').height());
   //   var windowHeight = $(window).height();
   //   var footerHeightPx = footerHeight + 'px';
-  //   $('.st-content').css("margin-bottom", footerHeightPx);
+  //   $('.cs_content').css("margin-bottom", footerHeightPx);
   // }
 
   /*--------------------------------------------------------------
     9. Slick Slider
   --------------------------------------------------------------*/
   function slickInit() {
-    $('.st-slider').each(function() {
+    $(".cs_slider").each(function () {
       // Slick Variable
-      var $ts = $(this).find('.slick-container');
-      var $slickActive = $(this).find('.slick-wrapper');
-      var $sliderNumber = $(this).siblings('.slider-number');
+      var $ts = $(this).find(".slick-container");
+      var $slickActive = $(this).find(".slick-wrapper");
+      var $sliderNumber = $(this).siblings(".slider-number");
 
       // Auto Play
-      var autoPlayVar = parseInt($ts.attr('data-autoplay'), 10);
+      var autoPlayVar = parseInt($ts.attr("data-autoplay"), 10);
       // Auto Play Time Out
       var autoplaySpdVar = 3000;
       if (autoPlayVar > 1) {
@@ -290,80 +261,81 @@
         autoPlayVar = 1;
       }
       // Slide Change Speed
-      var speedVar = parseInt($ts.attr('data-speed'), 10);
+      var speedVar = parseInt($ts.attr("data-speed"), 10);
       // Slider Loop
-      var loopVar = Boolean(parseInt($ts.attr('data-loop'), 10));
+      var loopVar = Boolean(parseInt($ts.attr("data-loop"), 10));
       // Slider Center
-      var centerVar = Boolean(parseInt($ts.attr('data-center'), 10));
+      var centerVar = Boolean(parseInt($ts.attr("data-center"), 10));
       // Pagination
-      var paginaiton = $(this).children().hasClass('pagination');
+      var paginaiton = $(this).children().hasClass("pagination");
       // Slide Per View
-      var slidesPerView = $ts.attr('data-slides-per-view');
+      var slidesPerView = $ts.attr("data-slides-per-view");
       if (slidesPerView == 1) {
         slidesPerView = 1;
       }
-      if (slidesPerView == 'responsive') {
-        var slidesPerView = parseInt($ts.attr('data-add-slides'), 10);
-        var lgPoint = parseInt($ts.attr('data-lg-slides'), 10);
-        var mdPoint = parseInt($ts.attr('data-md-slides'), 10);
-        var smPoint = parseInt($ts.attr('data-sm-slides'), 10);
-        var xsPoing = parseInt($ts.attr('data-xs-slides'), 10);
+      if (slidesPerView == "responsive") {
+        var slidesPerView = parseInt($ts.attr("data-add-slides"), 10);
+        var lgPoint = parseInt($ts.attr("data-lg-slides"), 10);
+        var mdPoint = parseInt($ts.attr("data-md-slides"), 10);
+        var smPoint = parseInt($ts.attr("data-sm-slides"), 10);
+        var xsPoing = parseInt($ts.attr("data-xs-slides"), 10);
       }
       // Fade Slider
-      var fadeVar = parseInt($($ts).attr('data-fade-slide'));
-      (fadeVar === 1) ? (fadeVar = true) : (fadeVar = false);
+      var fadeVar = parseInt($($ts).attr("data-fade-slide"));
+      fadeVar === 1 ? (fadeVar = true) : (fadeVar = false);
 
       // Slick Active Code
       $slickActive.slick({
         infinite: true,
         autoplay: autoPlayVar,
         dots: paginaiton,
-        centerPadding: '0',
+        centerPadding: "0",
         speed: speedVar,
         infinite: loopVar,
         autoplaySpeed: autoplaySpdVar,
         centerMode: centerVar,
         fade: fadeVar,
-        prevArrow: $(this).find('.slick-arrow-left'),
-        nextArrow: $(this).find('.slick-arrow-right'),
-        appendDots: $(this).find('.pagination'),
+        prevArrow: $(this).find(".slick-arrow-left"),
+        nextArrow: $(this).find(".slick-arrow-right"),
+        appendDots: $(this).find(".pagination"),
         slidesToShow: slidesPerView,
-        responsive: [{
-          breakpoint: 1600,
-          settings: {
-            slidesToShow: lgPoint
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: mdPoint
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: smPoint
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: xsPoing
-          }
-        }
-        ]
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: lgPoint,
+            },
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: mdPoint,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: smPoint,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: xsPoing,
+            },
+          },
+        ],
       });
-    })
+    });
   }
 
   /*--------------------------------------------------------------
     10. Progress Bar
   --------------------------------------------------------------*/
   // function progressBarInit() {
-  //   $('.st-progressbar').each(function() {
+  //   $('.cs_progressbar').each(function() {
   //     var progressPercentage = $(this).data('progress') + "%";
-  //     $(this).find('.st-progressbar-in').css('width', progressPercentage);
+  //     $(this).find('.cs_progressbar-in').css('width', progressPercentage);
   //   });
   // }
 
@@ -371,12 +343,12 @@
     11. Pricing Table
   --------------------------------------------------------------*/
   // function pricingTableInit() {
-  //   $('.st-pricing-table.st-style1').hover(
+  //   $('.cs_pricing-table.cs_style1').hover(
   //     function() {
-  //       $('.st-pricing-table.st-style1').addClass('st-active');
-  //       $(this).removeClass('st-active');
+  //       $('.cs_pricing-table.cs_style1').addClass('cs_active');
+  //       $(this).removeClass('cs_active');
   //     },
-  //     function() { $('.st-pricing-table.st-style1').removeClass('st-active') }
+  //     function() { $('.cs_pricing-table.cs_style1').removeClass('cs_active') }
   //     )
   // }
 
@@ -385,7 +357,7 @@
   --------------------------------------------------------------*/
   // Contact Form
   // function formValidation() {
-  //   $('#st-alert').hide();
+  //   $('#cs_alert').hide();
   //   $('#contact-form #submit').on('click', function() {
   //     var name = $('#name').val();
   //     var subject = $('#subject').val();
@@ -395,7 +367,7 @@
   //     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
   //     if (!regex.test(email)) {
-  //       $('#st-alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
+  //       $('#cs_alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
   //       return false;
   //     }
 
@@ -422,14 +394,14 @@
   //           $('#email').val('');
   //           $('#msg').val('');
 
-  //           $('#st-alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
+  //           $('#cs_alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
   //           setTimeout(function() {
-  //             $('#st-alert').fadeOut('slow');
+  //             $('#cs_alert').fadeOut('slow');
   //           }, 4000);
   //         }
   //       });
   //     } else {
-  //       $('#st-alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
+  //       $('#cs_alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
   //     }
   //     return false;
   //   });
@@ -438,7 +410,7 @@
   // Appointment Form
   // function appointmentForm() {
 
-  //   $('#st-alert1').hide();
+  //   $('#cs_alert1').hide();
   //   $('#appointment-form #appointment-submit').on('click', function() {
   //     var uname = $('#uname').val();
   //     var uemail = $('#uemail').val();
@@ -450,7 +422,7 @@
   //     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
   //     if (!regex.test(uemail)) {
-  //       $('#st-alert1').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
+  //       $('#cs_alert1').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
   //       return false;
   //     }
 
@@ -482,14 +454,14 @@
   //           $('#udoctor').val('');
   //           $('#umsg').val('');
 
-  //           $('#st-alert1').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Appointment has been sent successfully.</div>');
+  //           $('#cs_alert1').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Appointment has been sent successfully.</div>');
   //           setTimeout(function() {
-  //             $('#st-alert1').fadeOut('slow');
+  //             $('#cs_alert1').fadeOut('slow');
   //           }, 4000);
   //         }
   //       });
   //     } else {
-  //       $('#st-alert1').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
+  //       $('#cs_alert1').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
   //     }
   //     return false;
   //   });
@@ -531,17 +503,17 @@
     14. Modal Video
   --------------------------------------------------------------*/
   // function modalVideo() {
-  //   $(document).on('click', '.st-video-open', function(e) {
+  //   $(document).on('click', '.cs_video-open', function(e) {
   //     e.preventDefault();
   //     var video = $(this).attr('href');
-  //     $('.st-video-popup-container iframe').attr('src', video);
-  //     $('.st-video-popup').addClass('active');
+  //     $('.cs_video-popup-container iframe').attr('src', video);
+  //     $('.cs_video-popup').addClass('active');
 
   //   });
-  //   $('.st-video-popup-close, .st-video-popup-layer').on('click', function(e) {
-  //     $('.st-video-popup').removeClass('active');
+  //   $('.cs_video-popup-close, .cs_video-popup-layer').on('click', function(e) {
+  //     $('.cs_video-popup').removeClass('active');
   //     $('html').removeClass('overflow-hidden');
-  //     $('.st-video-popup-container iframe').attr('src', 'about:blank')
+  //     $('.cs_video-popup-container iframe').attr('src', 'about:blank')
   //     e.preventDefault();
   //   });
   // }
@@ -550,9 +522,9 @@
     15. Light Gallery
   --------------------------------------------------------------*/
   // function lightGallery() {
-  //   $('.st-lightgallery').each(function() {
+  //   $('.cs_lightgallery').each(function() {
   //     $(this).lightGallery({
-  //       selector: '.st-lightbox-item',
+  //       selector: '.cs_lightbox-item',
   //       subHtmlSelectorRelative: false,
   //       thumbnail: false,
   //       mousewheel: true
@@ -564,7 +536,7 @@
     16. Tamjid Counter
   --------------------------------------------------------------*/
   // function counterInit() {
-  //   $('.st-counter').tamjidCounter({
+  //   $('.cs_counter').tamjidCounter({
   //     duration: 700
   //   });
   // }
@@ -573,9 +545,9 @@
     17. Ripple
   --------------------------------------------------------------*/
   // function rippleInit() {
-  //   if ($.exists('.st-ripple-version')) {
-  //     $('.st-ripple-version').each(function() {
-  //       $('.st-ripple-version').ripples({
+  //   if ($.exists('.cs_ripple-version')) {
+  //     $('.cs_ripple-version').each(function() {
+  //       $('.cs_ripple-version').ripples({
   //         resolution: 512,
   //         dropRadius: 20,
   //         perturbance: 0.04,
@@ -588,28 +560,27 @@
     18. Tabs
   --------------------------------------------------------------*/
   // function tabs() {
-  //   $('.st-tabs.st-fade-tabs .st-tab-links a').on('click', function(e) {
+  //   $('.cs_tabs.cs_fade-tabs .cs_tab-links a').on('click', function(e) {
   //     var currentAttrValue = $(this).attr('href');
-  //     $('.st-tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+  //     $('.cs_tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
   //     $(this).parents('li').addClass('active').siblings().removeClass('active');
   //     e.preventDefault();
   //   });
   // }
-
 
   /*--------------------------------------------------------------
     19. Accordian
   --------------------------------------------------------------*/
   // function accordianSetup() {
   //   var $this = $(this);
-  //   $('.st-accordian').children('.st-accordian-body').hide();
-  //   $('.st-accordian.active').children('.st-accordian-body').show();
-  //   $('.st-accordian-title').on('click', function() {
-  //     $(this).parent('.st-accordian').siblings().children('.st-accordian-body').slideUp(250);
+  //   $('.cs_accordian').children('.cs_accordian-body').hide();
+  //   $('.cs_accordian.active').children('.cs_accordian-body').show();
+  //   $('.cs_accordian-title').on('click', function() {
+  //     $(this).parent('.cs_accordian').siblings().children('.cs_accordian-body').slideUp(250);
   //     $(this).siblings().slideDown(250);
   //     /* Accordian Active Class */
-  //     $(this).parents('.st-accordian').addClass('active');
-  //     $(this).parent('.st-accordian').siblings().removeClass('active');
+  //     $(this).parents('.cs_accordian').addClass('active');
+  //     $(this).parent('.cs_accordian').siblings().removeClass('active');
   //   });
   // }
 
@@ -617,13 +588,13 @@
     20. Before After Slider
   --------------------------------------------------------------*/
   // function beforeAfterSlider() {
-  //   if ($.exists('.st-before-after')) {
+  //   if ($.exists('.cs_before-after')) {
   //     var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
-  //     $('.st-before-after').each(function() {
+  //     $('.cs_before-after').each(function() {
   //       var $container = $(this),
-  //       $before = $container.find('.st-before'),
-  //       $after = $container.find('.st-after'),
-  //       $handle = $container.find('.st-handle-before-after');
+  //       $before = $container.find('.cs_before'),
+  //       $after = $container.find('.cs_after'),
+  //       $handle = $container.find('.cs_handle-before-after');
 
   //       var maxX = $container.outerWidth(),
   //       offsetX = $container.offset().left,
@@ -684,6 +655,4 @@
   //     });
   //   }
   // }
-
-
 })(jQuery); // End of use strict
