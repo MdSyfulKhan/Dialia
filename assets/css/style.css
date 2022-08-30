@@ -1750,8 +1750,13 @@ a {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 117, 183, 0.1);
           box-shadow: 0px 0px 10px 1px rgba(0, 117, 183, 0.1);
   border-radius: 10px;
-  padding: 30px;
   padding-bottom: 0px;
+}
+
+.cs_team.cs_style1 .cs_team_photo {
+  padding: 30px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .cs_team.cs_style1 .cs_team_details {
